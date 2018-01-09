@@ -12,6 +12,11 @@ public class DartGame {
 		System.out.println(result);
 	}
 
+	/**
+	 * solveDartGame(String input)
+	 *    String 인풋을 받아서 다트 게임 정답을 찾아냅니다.
+	 * @return int 는 계산한 가격
+	 */
 	public int solveDartGame(String input) {
 		int result = 0;
 
@@ -51,10 +56,20 @@ public class DartGame {
 		return sum;
 	}
 
+	/**
+	 * isLetter(String str)
+	 *    String 인풋이 알파벳 D,T,S 인지 아닌지 알려냅니다.
+	 * @return D,T,S 가 맞으면 true. 아니면, false
+	 */
 	public boolean isLetter(String str) {
 		return str.equals("D") || str.equals("T") || str.equals("S");
 	}
 
+	/**
+	 * isNumber(String str)
+	 *    String 인풋이 숫자인지 알려줍닏
+	 * @return 인풋이 숫자이면 true. 아니면 false.
+	 */
 	public boolean isNumber(String str) {
 		boolean result = false;
 		try {
@@ -67,6 +82,11 @@ public class DartGame {
 		return result;
 	}
 
+	/**
+	 * calculateMultiplier(int num, String letter)
+	 *    주어진만큼 계산해서 숫자를 구합니다
+	 * @return multiplier 와 숫자를 곱한 값
+	 */
 	public int calculateMultiplier(int num, String letter) {
 		int sum = num;
 		if(letter.equals("D")) {
@@ -79,6 +99,11 @@ public class DartGame {
 		return sum;
 	}
 
+	/**
+	 * calculateSum(int[] list)
+	 *    전체 총계를 계산합니다
+	 * @return 어레이에 있는 값을 총계한 값
+	 */
   public int calculateSum(int[] list) {
 		int sum = 0;
 		for(int i=0, n=list.length; i < n; ++ i) {
